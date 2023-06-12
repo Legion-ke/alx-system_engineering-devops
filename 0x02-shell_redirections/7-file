@@ -1,0 +1,7 @@
+#!/bin/bash
+
+filename="*\\'\"Best School\"\\*$?*****:)"
+text="Best School"
+
+echo "$text" > "$filename"
+echo "File '$filename' created."

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+file="iacta"
+line_number=3
+
+echo "Third line of $file:"
+echo "===================="
+sed -n "${line_number}p" "$file"

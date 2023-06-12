@@ -1,0 +1,6 @@
+#!/bin/bash
+
+filename="ls_cwd_content"
+
+ls -la > "$filename"
+echo "File '$filename' created with the result of 'ls -la'."

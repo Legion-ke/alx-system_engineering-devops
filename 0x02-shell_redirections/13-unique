@@ -1,0 +1,15 @@
+#!/bin/bash
+
+declare -A word_count
+
+# Read words from input
+while read -r word; do
+    word_count["$word"]=$((word_count["$word"]+1))
+done
+
+# Print words that appear exactly once
+for word in "${!word_count[@]}"; do
+    if [[ ${word_count["$word"]} -eq 1 ]]; then
+        echo "$word"
+    fi
+done | sort

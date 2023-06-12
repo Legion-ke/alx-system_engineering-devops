@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "Content of /etc/passwd:"
+echo "======================="
+cat /etc/passwd
+
+echo
+
+echo "Content of /etc/hosts:"
+echo "======================"
+cat /etc/hosts

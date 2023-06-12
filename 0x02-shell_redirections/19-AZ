@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "Enter your input: " input
+
+# Replace characters 'A' with 'Z'
+input="${input//A/Z}"
+
+# Replace characters 'c' with 'e'
+input="${input//c/e}"
+
+echo "Modified output: $input"

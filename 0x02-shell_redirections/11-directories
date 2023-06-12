@@ -1,0 +1,6 @@
+#!/bin/bash
+count=0
+find . -type d -not -path '*/\.*' -not -path '.' -not -path './.*' | while read -r dir; do
+    count=$((count+1))
+done
+echo "Total number of directories and subdirectories: $count"
